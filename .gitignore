@@ -1,0 +1,14 @@
+/target/
+.DS_Store
+.classpath
+.project
+.settings/
+.Rhistory
+metastore
+derby.log
+.cache
+.nfs*
+target
+.ipynb_checkpoints
+metastore_db
+

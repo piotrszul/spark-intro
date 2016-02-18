@@ -1,4 +1,5 @@
-:sh rm -rf output.txt
+:sh mkdir -p target
+:sh rm -rf target/wordcount.txt
 {
   sc.textFile("../data/input.txt")
         .flatMap(_.split("[^\\w]"))
@@ -8,6 +9,6 @@
         .reduceByKey(_ + _)
         .map(_.swap)
         .sortByKey()
-        .saveAsTextFile("output.txt")
+        .saveAsTextFile("target/wordcount.txt")
 }
 

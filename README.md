@@ -46,6 +46,10 @@ In `java8/wordcount` dir run:
 	./run-local.sh     #to run in local mode
 
 
+#Running spark sql and spark ml example
+In `ml` dir run:
+
+	IPYTHON_OPTS="notebook" pyspark --packages com.databricks:spark-csv_2.11:1.3.0
 
 
 #More info:

@@ -7,6 +7,7 @@ Spark Examples for the Presentation
 * maven 3
 * python 2.7
 * ipython 3+
+* R/3.2
 
 #Installing Apache Spark:
 
@@ -50,6 +51,24 @@ In `java8/wordcount` dir run:
 In `ml` or `sql` dir run:
 
 	IPYTHON_OPTS="notebook" pyspark --packages com.databricks:spark-csv_2.11:1.3.0
+
+
+#Running R examples
+
+SparkR examples are in `R` directory.
+
+`SPARK_HOME` env variable needs to be set. If not set globally can be set for R and RStudion in `~/.Rprofile`. e.g:
+
+	#File: ~/.Rprofile
+	Sys.setenv(SPARK_HOME="/opt/spark-1.6.0")
+
+To initialise a local spark context use:
+	
+	source 'spark.local.R'
+
+The spark context is available in: `sc` variable and the sql context (data frame context) in: `dc`
+
+To go through the `housing.R` example open it in RStudio and run the desired fragments.
 
 
 #More info:

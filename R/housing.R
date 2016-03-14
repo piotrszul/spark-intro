@@ -1,11 +1,12 @@
 # 
-#
+# Getting started: http://spark.apache.org/docs/latest/sparkr.html
 # API docs: https://spark.apache.org/docs/1.6.1/api/R/index.html
 #
-# SPARK_HOME needs to be defined (maybe in .Rprofile)
+# SPARK_HOME needs to be defined (e.g in .Rprofile)
+# Sys.setenv(SPARK_HOME="<path-to-spark>")
 #
 
-#load dependencites for visualisations
+#load dependencies for visualisations
 library(manipulate)
 library(ggplot2)
 

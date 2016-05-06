@@ -5,7 +5,7 @@ Spark Examples for the Presentation
 
 * java 8
 * maven 3
-* python 2.7
+* python 2.7 (with numpy and pandas)
 * ipython 3+
 * R/3.2
 

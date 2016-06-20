@@ -11,12 +11,12 @@ Spark Examples for the Presentation
 
 #Installing Apache Spark:
 
-* Download Apache Spark version 1.6.0 pre-build with Hadoop 2.6.x from http://spark.apache.org/downloads.html
+* Download Apache Spark version 1.6.1 pre-build with Hadoop 2.6.x from http://spark.apache.org/downloads.html
 * Untar in desired location (SPARK_HOME) and add $SPARK_HOME/bin to your path
 
 e.g in your `~/.bash_profile` :
 
-	export SPARK_HOME=/opt/spark-1.6.0
+	export SPARK_HOME=/opt/spark-1.6.1
 	export PATH=$PATH:$SPARK_HOME/bin	
 
 
@@ -50,7 +50,7 @@ In `java8/wordcount` dir run:
 #Running spark sql and spark ml example
 In `ml` or `sql` dir run:
 
-	IPYTHON_OPTS="notebook" pyspark --packages com.databricks:spark-csv_2.11:1.3.0
+	IPYTHON_OPTS="notebook" pyspark --packages com.databricks:spark-csv_2.10:1.3.0
 
 
 #Running R examples
@@ -60,7 +60,7 @@ SparkR examples are in `R` directory.
 `SPARK_HOME` env variable needs to be set. If not set globally can be set for R and RStudion in `~/.Rprofile`. e.g:
 
 	#File: ~/.Rprofile
-	Sys.setenv(SPARK_HOME="/opt/spark-1.6.0")
+	Sys.setenv(SPARK_HOME="/opt/spark-1.6.1")
 
 To initialise a local spark context use:
 	
